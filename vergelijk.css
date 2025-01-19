@@ -1,0 +1,47 @@
+table   {
+    font-family: Tahoma, sans-serif;
+    border-collapse: collapse;
+    text-align: center;
+    border: 3px solid black;
+    width: 720px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+   margin-left: auto;
+    margin-right: auto;
+}
+
+thead   {
+    background-color: #A52023;
+    color: #FFF;
+    font-variant: small-caps;
+}
+
+tbody   {
+    text-align: center;
+}
+
+tbody th {
+    text-align: left;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid black;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+}
+
+tr:nth-child(even) {
+    background-color: #A5202320;
+}
+
+tfoot{
+    border: none;
+}
+
+p{
+    padding: 0.5rem;
+    font-style: italic;
+}

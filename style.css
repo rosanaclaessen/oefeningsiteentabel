@@ -1,0 +1,131 @@
+*{
+    font-family: Tahoma, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;                   /*geen witruimte binnen en buiten element (navbar volledig tegen rechter en linker kant*/
+}
+
+.navbar-left{
+    font-size:1em;
+}
+.navbar-right{
+    font-size:1em;
+}
+.navbar{
+   position: sticky;
+    display:flex;
+    justify-content: space-between;                              /*ruimte tussen*/
+    align-items: center;
+    top: 0;                                                     /*tegen bovenkant*/
+    background-color: white;
+    border-bottom: #A52023 2px solid;
+    color: #A52023;
+    padding: 30px 20px;
+
+}
+.navbar ul{
+    list-style: none;                                            /*geen oplijsting, punten vallen weg*/
+    display: flex;
+    gap: 15px;                                                   /*zorgt da ze langs elkaar komen te staan*/
+    margin: 0;
+    padding: 0;
+}
+.navbar li{
+   background-color: #A52023;
+    padding: 10px 25px 10px 25px;                                /*vakjes rond navbar links zoals home, px'en van vakje zelf bekijken*/
+
+}
+.navbar a:hover{
+    color: #FFBD2E;
+}
+.navbar a{
+    text-decoration: none;                                       /*onderlijning valt weg*/
+    color: white;
+}
+.afbeelding{
+    background: url("vlees.jpg") no-repeat center center/cover;
+    height: 50vh;                                                  /*vh= viewportheight= eenheid die zich aanpast op scherm, toont ong 50% van afbeelding*/
+   display: flex;
+   justify-content: flex-end;                                        /*titel rechterkant afbeelding*/
+  align-items: flex-end;                                                 /*zet titel aan onderkant*/
+  color: white;
+}
+.quote{
+font-size:6rem;
+padding: 10px 20px;
+font-family: Garamond,Serif;
+color:#A52023;
+text-shadow: 0.5rem 1px 2px white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 70rem;
+    margin: auto;
+}
+
+.main_intro-container{
+    text-align: left;                                                /*zorgt ervoor dat teksgt links uitlijnt*/
+    margin-bottom: 2rem;                                                /*witruimte onder de 3 paragrafen*/
+}
+
+.main_intro-container p{
+    margin-top: 1rem;                                                    /*witruimte boven enlk paragraaf*/
+    line-height: 1.5rem;
+}
+.main_bbq-container h2 {
+    font-size: 3rem;
+    color: #A52023;
+    font-family: Garamond,Serif;                                         /*font family= lettertype*/
+}
+
+.bbq-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;                                                               /*ruimte tussen bbq items*/
+    padding: 0;
+    list-style: none;                                                           /*bolletjes lijst verdwijnt*/
+}
+
+.bbq-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #A52023;                                               /*lijn rond kader*/
+    width: 25%;
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px 0 0 15px;                                            /*2 ronde en 2 scherpe hoeken bij vakjes*/
+}
+
+.bbq-item img{
+    width: 80%;
+    border-radius: 10px;                                                     /*hoeken worden ronder van image*/
+}
+
+.bbq-item h3{
+    font-size: 1.5rem;
+    color: #A52023;
+    text-transform: uppercase;                                              /*titel word hoofdletter en vet(houtskool)*/
+
+}
+
+.bbq-item p{
+    font-size: 1rem;                                                             /*letter groote=font size*/
+    color: gray;
+    line-height: 1.5rem;
+}
+footer{
+    background-color: #A52023;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;                                                           /*witruimte footer en items*/
+    padding: 0.5rem;                                                          /*dikte footer*/
+}
